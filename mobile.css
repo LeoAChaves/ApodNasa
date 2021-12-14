@@ -1,0 +1,98 @@
+@media (max-width: 1000px) {
+  .dayPicture {
+    width: 800px;
+  }
+  nav {
+    font-size: small;
+  }
+}
+@media (max-width: 900px) {
+  .dayPicture {
+    width: 700px;
+  }
+  nav {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .dayPicture {
+    width: 450px;
+  }
+}
+@media (max-width: 750px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
+  .dayPicture {
+    width: 300px;
+  }
+  .descricao {
+    font-size: 15px;
+  }
+  footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .selecaoData label {
+    font-size: 12px;
+  }
+  .dataInvalida {
+    display: none;
+  }
+  .dayPicture {
+    width: 300px;
+  }
+  .descricao {
+    font-size: 10px;
+  }
+  footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px) {
+  h1 {
+    display: none;
+  }
+  h2 {
+    font-size: 13px;
+  }
+  .dayPicture {
+    width: 200px;
+    padding-top: 15px;
+  }
+}
+@media (max-width: 290px) {
+  .selecaoData label {
+    display: none;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  .mostraData {
+    font-size: 10px;
+  }
+}
+@media (max-width: 220px) {
+  .selecaoData {
+    display: flex;
+    flex-direction: column;
+  }
+  .dayPicture {
+    width: 150px;
+  }
+}

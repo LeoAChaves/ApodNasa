@@ -14,7 +14,6 @@ body {
 header {
   background-image: url("./imagens/stars-galaxies-purple-hd-1080P-wallpaper.jpg");
   display: flex;
-  width: 100%;
 }
 .logo {
   margin: 2px 50px;
@@ -109,11 +108,13 @@ button {
 }
 footer {
   background-image: url("./imagens/stars-galaxies-purple-hd-1080P-wallpaper.jpg");
-  width: 100%;
   height: 50px;
   text-align: center;
   padding-top: 15px;
   color: white;
+}
+footer:hover {
+  cursor: default;
 }
 a {
   text-decoration: none;
