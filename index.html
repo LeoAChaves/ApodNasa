@@ -15,6 +15,17 @@
   <body>
     <header>
       <img class="logo" src="./imagens/nasa-logo.svg" alt="Logo Nasa" />
+      <nav>
+        <ul class="links">
+          <a href=""><li>Missions</li></a>
+          <a href=""><li>Galleries</li></a>
+          <a href=""><li>NASA TV</li></a>
+          <a href=""><li>Follow NASA</li></a>
+          <a href=""><li>Downloads</li></a>
+          <a href=""><li>About</li></a>
+          <a href=""><li>NASA Audiences</li></a>
+        </ul>
+      </nav>
     </header>
 
     <h1>Astronomy Picture of the Day</h1>
@@ -24,7 +35,10 @@
       <div class="selecaoData">
         <label for="dataEntrada">Data:</label>
         <input type="date" name="dataEntrada" id="data" />
-        <button type="submit" for="dataEntrada">Enviar</button>
+        <span class="dataInvalida"> - Invalid date</span>
+        <button type="submit" for="dataEntrada" onclick="enviar()">
+          Enviar
+        </button>
       </div>
 
       <h2 class="titulo"></h2>

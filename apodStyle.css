@@ -13,15 +13,25 @@ body {
 }
 header {
   background-image: url("./imagens/stars-galaxies-purple-hd-1080P-wallpaper.jpg");
+  display: flex;
+  width: 100%;
 }
 .logo {
   margin: 20px 50px;
+}
+.data-vermelha {
+  background-color: red;
+}
+.none {
+  display: none;
+}
+.display {
+  color: red;
 }
 main {
   display: flex;
   flex-direction: column;
 }
-
 footer {
   background-image: url("./imagens/stars-galaxies-purple-hd-1080P-wallpaper.jpg");
   width: 100%;
