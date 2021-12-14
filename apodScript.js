@@ -9,6 +9,7 @@ $(".dataInvalida").addClass("none");
 
 function alterarConteudo(result) {
   $(".titulo").text(result.title);
+  $(".mostraData").text(result.date);
   $(".dayPicture").attr("src", result.url);
   $(".direitosImagem").text(result.copyright);
   $(".descricao").text("Explanation: " + result.explanation);

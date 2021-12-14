@@ -5,11 +5,11 @@
 }
 body {
   background-color: black;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
   background-image: url("./imagens/stars-galaxies-purple-hd-1080P-wallpaper.jpg");
@@ -25,6 +25,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   margin-right: 50px;
+  font-weight: 700;
 }
 .dropdown {
   position: relative;
@@ -54,12 +55,6 @@ nav {
 .dropdown-content li:hover {
   background-color: #12345e;
 }
-.dropdown::after {
-  content: "|";
-}
-.dropdown::before {
-  content: "|";
-}
 li {
   list-style: none;
   text-align: left;
@@ -68,6 +63,36 @@ li {
 .nasaTv {
   text-decoration: none;
   color: white;
+}
+.nasaTv:hover {
+  cursor: pointer;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+main * {
+  padding: 5px 0px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.selecaoData {
+  margin-bottom: 20px;
+}
+#data:hover,
+button {
+  cursor: pointer;
 }
 .data-vermelha {
   background-color: red;
@@ -78,9 +103,9 @@ li {
 .display {
   color: red;
 }
-main {
-  display: flex;
-  flex-direction: column;
+.descricao {
+  margin: 20px 0px;
+  width: 80%;
 }
 footer {
   background-image: url("./imagens/stars-galaxies-purple-hd-1080P-wallpaper.jpg");
