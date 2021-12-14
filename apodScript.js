@@ -10,8 +10,8 @@ $(".dataInvalida").addClass("none");
 function alterarConteudo(result) {
   $(".titulo").text(result.title);
   $(".dayPicture").attr("src", result.url);
-  $(".descricao").text(result.explanation);
   $(".direitosImagem").text(result.copyright);
+  $(".descricao").text("Explanation: " + result.explanation);
 }
 
 function requisicao(dataSelecionada) {

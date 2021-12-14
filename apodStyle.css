@@ -17,7 +17,57 @@ header {
   width: 100%;
 }
 .logo {
-  margin: 20px 50px;
+  margin: 2px 50px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 50px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #15418c;
+  width: 120%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  z-index: 1;
+  margin-top: 15px;
+  margin-left: -20px;
+}
+.dropdown:hover {
+  background-color: #15418c;
+  cursor: default;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content li:hover {
+  background-color: #12345e;
+}
+.dropdown::after {
+  content: "|";
+}
+.dropdown::before {
+  content: "|";
+}
+li {
+  list-style: none;
+  text-align: left;
+  padding: 10px 5px 10px 10px;
+}
+.nasaTv {
+  text-decoration: none;
+  color: white;
 }
 .data-vermelha {
   background-color: red;
@@ -40,7 +90,7 @@ footer {
   padding-top: 15px;
   color: white;
 }
-footer a {
+a {
   text-decoration: none;
   color: white;
 }
