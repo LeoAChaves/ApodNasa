@@ -4,7 +4,6 @@ const dia = String(dataAtual.getDate()).padStart(2, "0");
 const mes = String(dataAtual.getMonth() + 1).padStart(2, "0");
 const ano = String(dataAtual.getFullYear());
 const hoje = ano + "-" + mes + "-" + dia;
-
 $(".dataInvalida").addClass("none");
 
 function alterarConteudo(result) {
@@ -14,7 +13,6 @@ function alterarConteudo(result) {
   $(".direitosImagem").text(result.copyright);
   $(".descricao").text("Explanation: " + result.explanation);
 }
-
 function requisicao(dataSelecionada) {
   $.ajax({
     url:
@@ -33,14 +31,13 @@ function requisicao(dataSelecionada) {
     },
   });
 }
+function enviar() {
+  const dataInp = $("#data").val();
+  requisicao(dataInp);
+}
 
 if (hora >= 5) {
   requisicao(hoje);
 } else {
   requisicao("2000-01-21");
-}
-
-function enviar() {
-  const dataInp = $("#data").val();
-  requisicao(dataInp);
 }
