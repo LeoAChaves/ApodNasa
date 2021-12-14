@@ -16,8 +16,34 @@
     <header>
       <img class="logo" src="./imagens/nasa-logo.svg" alt="Logo Nasa" />
     </header>
-    <main></main>
-    <footer></footer>
+
+    <h1>Astronomy Picture of the Day</h1>
+    <p class="mostraData"></p>
+
+    <main>
+      <div class="selecaoData">
+        <label for="dataEntrada">Data:</label>
+        <input type="date" name="dataEntrada" id="data" />
+        <button type="submit" for="dataEntrada">Enviar</button>
+      </div>
+
+      <h2 class="titulo"></h2>
+
+      <img class="dayPicture" src="" alt="Imagem do dia (Nasa)" />
+
+      <p class="direitosImagem"></p>
+
+      <p class="descricao"></p>
+    </main>
+    <footer>
+      <p class="copyright">
+        &COPY; Created by
+        <a href="https://github.com/LeoAChaves">Leonardo Chaves</a> - For
+        educational purposes,
+        <a href="https://www.resilia.com.br/">Resilia 2021</a>.
+      </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./apodScript.js"></script>
   </body>
 </html>

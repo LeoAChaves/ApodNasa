@@ -3,6 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
 header {
   background-image: url("./imagens/stars-galaxies-purple-hd-1080P-wallpaper.jpg");
+}
+.logo {
+  margin: 20px 50px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-image: url("./imagens/stars-galaxies-purple-hd-1080P-wallpaper.jpg");
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
