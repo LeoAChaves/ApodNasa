@@ -39,10 +39,10 @@ function requisicao(dataSelecionada) {
     },
   });
 }
-function enviar() {
+$(".enter").click(function () {
   const dataInp = $("#data").val();
   requisicao(dataInp);
-}
+});
 
 if (hora >= 5) {
   requisicao(hoje);

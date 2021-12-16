@@ -102,6 +102,10 @@ button {
 .display {
   color: red;
 }
+.dayVideo {
+  width: 1000px;
+  height: 700px;
+}
 .descricao {
   margin: 20px 0px;
   width: 80%;
