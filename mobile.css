@@ -76,6 +76,12 @@
     padding-top: 15px;
   }
 }
+@media (max-width: 320px) {
+  .dayVideo {
+    width: 180px;
+    padding-top: 15px;
+  }
+}
 @media (max-width: 290px) {
   .selecaoData label {
     display: none;

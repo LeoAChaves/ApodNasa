@@ -9,9 +9,17 @@ $(".dataInvalida").addClass("none");
 function alterarConteudo(result) {
   $(".titulo").text(result.title);
   $(".mostraData").text(result.date);
-  $(".dayPicture").attr("src", result.url);
   $(".direitosImagem").text(result.copyright);
   $(".descricao").text("Explanation: " + result.explanation);
+  if (result.media_type == "image") {
+    $(".dayPicture").attr("src", result.url);
+    $(".dayVideo").addClass("none");
+    $(".dayPicture").removeClass("none");
+  } else {
+    $(".dayPicture").addClass("none");
+    $(".dayVideo").removeClass("none");
+    $(".dayVideo").attr("src", result.url);
+  }
 }
 function requisicao(dataSelecionada) {
   $.ajax({
