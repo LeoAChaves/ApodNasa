@@ -1,6 +1,6 @@
 # 🪐 APOD NASA 🚀
 
-<img src="./imagens/readme.png" width="100%">
+<img src=".\src\assets\readme.png" width="100%">
 
 📖 Aprendendo um pouco sobre requisição de API's
 
